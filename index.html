@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hábitat</title>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+	<div class="container-fluid" >
+		<!-- HEADER -->
+		<header class="row ">
+			<div class="col-12 bg-darkgreen header__separator"></div>
+			<!-- NAVBAR MENU -->
+			<nav class="navbar navbar-expand-md navbar-light bg-light col-12   ">
+				<div class="d-flex w-100  header__nav-container">
+					<a class="navbar-brand" href="#"><img class="header__logo" src="img/logo.svg"
+							alt="logo de habitat"></a>
+					<div class="collapse navbar-collapse justify-content-md-center" id="nav-main">
+						<ul class="navbar-nav ml-xl-5  font-weight-bold quicksand">
+							<li class="nav-item px-xl-2 mx-xl-3 ">
+								<a class="nav-link text-ligthgreen active" href="#">Inicio </a>
+							</li>
+							<li class="nav-item px-xl-2 px-lg-1  mx-xl-1 mx-lg-1">
+								<a class="nav-link text-darkgreen" href="#">Conócenos</a>
+							</li>
+							<li class="nav-item px-xl-2 px-lg-1 mx-xl-4 mx-lg-1 dropdown">						
+								<a class="nav-link text-darkgreen" href="#" role="button" id="dropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+								<div class="container-hover  position-absolute align-items-center bg-light dropdown-menu"
+									aria-labelledby="dropdownMenuLink">
+									<div class="position-relative d-flex justify-content-center align-items-start">
+										<img src="img/imgservicios1.jpg" class="p-3" alt="personas mayores">
+										<span class="akzidenzgrotesk font-weight-light text-gris position-absolute mt-4">Servicios Residenciales</span>
+									</div>
+									<span></span>
+									<div class="position-relative d-flex justify-content-center align-items-start">
+										<img src="img/imgservicios2.jpg" class="p-3" alt="personas mayores">
+										<span class="akzidenzgrotesk font-weight-light text-gris position-absolute mt-4 px-5">Servicios Adicionales</span>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item px-xl-2 px-lg-1 mx-xl-2 mx-lg-1 ">
+								<a class="nav-link text-darkgreen" href="#">FAQ</a>
+							</li>
+							<li class="nav-item px-xl-1 px-lg-1 mx-xl-1 mx-lg-1 ">
+								<a class="nav-link text-darkgreen" href="#">Noticias</a>
+							</li>
+							<li class="nav-item px-xl-2 px-lg-1 mx-xl-3 mx-lg-1 ">
+								<a class="nav-link text-darkgreen" href="#">Contáctanos</a>
+							</li>
+						</ul>
+						<div
+							class=" icons align-items-center justify-content-between d-md-none d-lg-flex  ml-xl-4   pl-2">
+							<a class="rounded-circle icons__circle  justify-content-center d-flex align-items-center mr-3"
+								href="#">
+								<img src="img/facebook.svg" alt="icono de instagram">
+							</a>
+							<a class="rounded-circle icons__circle  justify-content-center d-flex align-items-center mr-3"
+								href="#">
+								<img src="img/instagram.svg" alt="icono de instagram">
+							</a>
+							<a class="rounded-circle icons__circle justify-content-center d-flex align-items-center  "
+								href="#">
+								<img src="img/youtube.svg" alt="icono de youtube ">
+							</a>
+						</div>
+					</div>
+					<button class="navbar-toggler rounded-circle bg-darkgreen position-absolute mt-2 p-1 mr-3"
+						type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</nav>
+			<!-- END NAVBAR MENU -->
+		</header>
+		<!-- END HEADER -->
+		<!-- LANDING -->
+		<section class="row flex-md-row flex-column  justify-content-center">
+			<!-- LEFT LANDING -->
+			<div class=" text-center text-light landing_left akzidenzgrotesk">
+				<div class="text-lg-left text-lg-center landing_left__title">
+					<h1 class="m-0">ELIGE
+						<span class="d-block">VIVIR</span>
+						<span class="quicksand ml-2 h5 d-block font-weight-bold position-relative">EN EL LUGAR QUE TE MERECES</span>
+					</h1>
+				</div>
+				<a href="#" class="btn btn-light btn--landing rounded-pill  py-2 mb-md-2 mb-4 quicksand font-weight-bold text-olive" >Contactaun asesor</a>
+			</div>
+			<!-- RIGHT LANDING -->
+			<div class="col px-0">
+				<img src="img/1.jpg" class="w-100" alt="imagen de bienestar">
+			</div>
+			<div
+				class="position-relative d-flex align-items-center justify-content-around  align-self-end bg-light  py-md-2 py-lg-4 landing__float">
+				<img src="img/vineta-left-tittle.png" alt="vineta">
+				<h1 class="font-weight-bold text-center d-inline-block text-darkgreen quicksand landing__float__title">
+					Servicios integrales para el
+					<span class="font-weight-light d-block ">cuidado del adulto mayor</span>
+				</h1>
+				<img src="img/vineta-right-tittle.png" alt="vineta">
+			</div>
+		</section>
+		<!-- END LANDING -->
+		<!-- SERVICES -->
+		<section class="row mt-5  ">
+			<div class="col-12 mt-4  service-container">
+				<div class="col-xl-9 col-lg-10 col-md-11 mx-auto service text-gris--oscuro mb-5 pl-xl-5 ">
+					<h2 class="font-weigth-bold ml-5 ml-lg-3 pl-2 pl-lg-0  akzidenzgrotesk font-weight-bold d-inline-block position-relative">
+						SERVICIOS
+						<span class=" d-block font-weight-light quicksand">Residenciales</span>
+					</h2>
+					<div class="row mt-4 pl-xl-3 pl-0">
+						<div class=" position-absolute ml-1 service__green-square bg-ligthgreen"></div>
+						<ul
+							class="text-left ml-md-auto ml-3 mr-2 pl-0  col-xl-5 col-lg-4 service__list list-unstyled quicksand font-weight-bold">
+							<li class="pb-1 mt-1 ">
+								<img class="mr-1" src="img/vineta-left.png" alt="vineta">
+								<span class="ml-2">	Residencia	permanente</span>
+							</li>
+							<li class="pt-3 "><img class="mr-1" src="img/vineta-left.png" alt="vineta">
+								<span class="ml-2">Residencia temporal</span>
+							</li>
+						</ul>
+					</div>
+					<div class="mt-2 d-flex justify-content-lg-end justify-content-center service__content  pt-2 ">
+						<figure class="d-flex align-items-center flex-column">
+							<img class="service__image position-relative " src="img/Sin-título-2.jpg"
+								alt="Personas disfrutando de la merienda" data-aos="fade-down">
+							<div class="position-absolute   service__green-lines h-25">
+							</div>
+							<a href="#" class="btn btn--service rounded-pill bg-olive position-relative text-white quicksand font-weight-bold px-3 py-2 " data-aos="fade-up">Conocer más</a>
+						</figure>
+					</div>
+				</div>
+				<div class="col-9 mx-auto service service--rigth text-right pr-0 pl-xl-5 p-0 ">
+					<h2 class="font-weigth-bold mr-5 pr-4 akzidenzgrotesk font-weight-bold d-inline-block position-relative text-gris--oscuro">
+						SERVICIOS
+						<span class=" d-block font-weight-light quicksand">Adicionales</span>
+					</h2>
+					<div class="row mt-4 ">
+						<ul class="text-right mr-auto  p-0  col-xl-5 col-lg-4 service__list list-unstyled quicksand font-weight-bold text-gris--oscuro">
+							<li class="pb-1 mt-1 "><img class="ml-1" src="img/vineta-left.png" alt="vineta">
+								<span class="mr-2">Centro día</span></li>
+							<li class="pt-3 "><img class="ml-1" src="img/vineta-left.png" alt="vineta">
+								<span class="mr-2">Centro de acondicionamiento funcional y rehabilitació</span>
+							</li>
+						</ul>
+						<div class=" position-absolute mr-lx-4 mr-0 service__green-square bg-ligthgreen"></div>
+					</div>
+					<div class=" d-flex justify-content-lg-start justify-content-center service__content   ml-1">
+						<figure class="d-flex align-items-center flex-column">
+							<img class="service__image position-relative " src="img/Sin-título-3.jpg"	alt="Personas disfrutando de la merienda" data-aos="fade-down">
+							<div class="position-absolute   service__green-lines h-25"></div>
+							<a href="#" class="btn btn--service rounded-pill bg-olive position-relative text-white quicksand font-weight-bold px-3 py-2 " data-aos="fade-up">Conocer más</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--  END SERVICES -->
+		<!-- HISTORY  -->
+		<section class="row  history   px-4">
+			<div class=" col-md-5 col-12 mb-4  text-md-right text-center my-md-auto ">
+				<img src="img/10anos.svg" class="mr-md-5" alt="10 años">
+			</div>
+			<div class="col-md-6 col-12 p-md-5 p-2 text-md-left text-center text-gris--oscuro font-weight-light quicksand">
+				<p>Han pasado 10 años desde que decidimos hacer un llamado a vivir la vida con optimismo y recoger los
+					frutos del camino recorrido, porque estamos convencidos que lo único necesario para vivir plenamente
+					es decidir hacerlo.
+				</p>
+				<p class="mb-2">
+					Durante este tiempo y desde la compra en 1995 de ´Mi Ranchito´ (la finca de los Ospina Pérez en La
+					Estrella) por parte de reconocidas empresas, entre ellas Suramericana, el propósito principal ha
+					sido contribuir a la vida digna y activa del adulto mayor.</p>
+				<a href="#" class="d-block font-weight-bold text-olive position-relative">Ver más</a>
+				<a href="#" class="btn btn--service rounded-pill bg-olive position-relative text-white quicksand font-weight-bold mb-2 px-4 py-2">Conocermás</a>
+			</div>
+		</section>
+		<!-- END HISTORY  -->
+		<!-- GALLERY  -->
+		<section>
+			<div class="row ">
+				<div class="col-xl-5 col-md-6 col-sm-5 d-sm-block d-none px-0">
+					<div class="row  ">
+						<div class="col-md-6 col-12 mb-2 pr-0">
+							<img src="img/Sin-título-8.jpg" class=" img-fluid h-100" alt="...">
+						</div>
+						<div class="col-6 d-md-block d-none">
+							<img src="img/Sin-título-4.jpg" class=" img-fluid" alt="...">
+						</div>
+						<div class=" col-md-6 col-12 pr-0">
+							<img src="img/Sin-título-10.jpg" class=" img-fluid h-100" alt="...">
+						</div>
+						<div class="col-6 d-md-block d-none">
+							<img src="img/Sin-título-1.jpg" class=" img-fluid" alt="...">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-sm-7 col-12 px-0 text-md-left text-center">
+					<img src="img/Sin-título-9.jpg" class=" img-fluid h-100" alt="...">
+				</div>
+				<div class="col-xl-3 ">
+					<div class="row">
+						<div class="col-xl-12 col-6  mb-2">
+							<img src="img/Sin-título-7.jpg" class=" img-fluid" alt="...">
+						</div>
+						<div class="col-xl-12 col-6">
+							<img src="img/Sin-título-6.jpg" class=" img-fluid" alt="...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY  -->
+		<!-- NEWS  -->
+		<section class="row  news justify-content-center my-5">
+			<div class="my-5 news__title position-relative quicksand col-12">
+				<h3 class=" text-center  text-darkgreen  font-weight-bold d-block">Noticias</h3>
+			</div>
+			<div
+				class="card bg-dark text-white mt-5 col-12 p-0 text-white d-flex align-items-center card--big overflow-hidden quicksand  ">
+				<img src="img/cena.jpg" alt="reunion">
+				<div class="card-img-overlay">
+					<a href="#" class="quicksand font-weight-bold text-white bg-olive py-2 px-3">Tema 1</a>
+					<p class="date font-weight-light text-white mt-3 ">Mayo 15, 2018</p>
+					<h3 class="font-weight-bold">BOLETÍN DE FAMILIAS - <span>Mes de Mayo</span> </h3>
+				</div>
+			</div>
+			<div class="card-deck mt-5 quicksand">
+				<div class="card border-0">
+					<img class="card-img-top mb-1" src="img/anciano.jpg" alt="Card image cap">
+					<div class="card-body pl-0 pt-2">
+						<a href="#" class="quicksand font-weight-bold text-white bg-olive py-1 px-2">Tema 1</a>
+						<p class="date font-weight-light mt-2 text-muted mb-1">Mayo 10, 2016</p>
+						<p class="font-weight-bold text-gris--oscuro">Envento academico con TENA</p>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="card-img-top mb-1" src="img/anciano.jpg" alt="Card image cap">
+					<div class="card-body pl-0 pt-2">
+						<a href="#" class="quicksand font-weight-bold text-white bg-olive py-1 px-2">Tema 1</a>
+						<p class="date font-weight-light mt-2 text-muted mb-1">Mayo 10, 2016</p>
+						<p class="font-weight-bold text-gris--oscuro">Lorem ipsum doum, asperiores excepturi nostrum
+							magnam </p>
+					</div>
+				</div>
+				<div class="card border-0">
+					<img class="card-img-top mb-1" src="img/anciano.jpg" alt="Card image cap">
+					<div class="card-body pl-0 pt-2">
+						<a href="#" class="quicksand font-weight-bold text-white bg-olive py-1 px-2">Tema 1</a>
+						<p class="date font-weight-light mt-2 text-muted mb-1">Mayo 10, 2016</p>
+						<p class="font-weight-bold text-gris--oscuro">Lorem ipsum doum, asperiores excepturi nostrum
+							magnam </p>
+					</div>
+				</div>
+
+			</div>
+			<div class="text-center ">
+				<a href="#"	class="btn btn--service rounded-pill bg-olive position-relative text-white quicksand mt-4 mb-5 font-weight-bold px-3 py-2 ">Ver todos</a>
+			</div>
+		</section>
+		<!-- END NEWS  -->
+		<!-- ALLIES  -->
+		<section class="row px-lg-5 mt-5 pt-5 justify-content-lx-center justify-content-sm-start justify-content-center align-items-center aliados">
+			<div class="col-5  pl-xl-5 pl-0 d-flex align-items-center mr-xl-5 pr-0 justify-content-md-left justify-content-center">
+				<h5 class="aliados-big akzidenzgrotesk font-weight-bold pl-xl-4 ">ALIADOS</h5>
+				<span class="position-absolute aliados-small font-weight-bold pl-4 quicksand h3 text-darkgreen">Aliados</span>
+			</div>
+			<div class=" aliados-separador d-none d-sm-inline"></div>
+			<div class="col-sm-3 col-12 d-flex align-items-center  justify-content-center justify-content-sm-start  ml-xl-5">
+				<img src="img/tena.png" class="tena mr-md-5 " alt="Tena">
+				<img src="img/logo-univ.png" class="ml-4 " alt="Universidad CES">
+			</div>
+		</section>
+		<!-- END ALLIES  -->
+		<!--  FILIAL  -->
+		<section class="row  align-items-center justify-content-center	 bg-gris filial">
+			<img src="img/filial.png" class="col-3 offset-md-4" alt="Grupo Sura">
+			<img src="img/Recurso 35.svg" class="col-md-3 col-4 offset-1 h-100" alt="Vigilado Supersalud">
+		</section>
+		<!-- END FILIAL  -->
+		<!-- CONTACT  -->
+		<section class="row justify-content-center contact">
+			<div class="col-md-4 col-10 my-md-5 pr-0 contact__left pl-lg-4 px-0" data-aos="fade-down">
+				<div class=" text-center text-white quicksand ">
+					<h5 class="font-weight-light">¿Tienes alguna duda?</h4>
+						<h3 class="font-weight-bold ">Contáctanos</h3>
+				</div>
+			</div>
+			<div class="col-md-7 col-10 pl-0 pr-md-1 pr-0 ">
+				<form method="post" class="py-5  quicksand pl-0" data-aos="fade-up" >
+					<div class="form-row bg-light p-md-5 p-4 ">
+						<div class="col-12 mb-2 mt-1 text-gris ml-2">
+							<input type="text" class="form-control rounded-pill pl-4" name="name"	placeholder="Nombre (requerido)" required>
+						</div>
+						<div class="col-12 my-2 text-gris ml-2">
+							<input type="email" name="email" class="form-control rounded-pill pl-4" 	placeholder="Correo electrónico (requerido)" required>
+						</div>
+						<div class="col my-2 text-gris ml-1 pr-0">
+							<input type="tel" name="teléfono" class="form-control rounded-pill pl-4" placeholder="Teléfono (requerido)" required>
+						</div>
+						<div class="col my-2 text-gris pr-0 ml-1 ">
+							<input type="tel" placeholder="Celular (requerido)" class="form-control rounded-pill pl-4 " name="celular" required>
+						</div>
+						<textarea name="message" cols="30" rows="7" placeholder="Mensaje"
+							class="my-2 form-control  text-gris--oscuro px-4 ml-2 pt-2 mt-1 "></textarea>
+						<div class="form-check col-11 my-3 ml-4 pl-3 d-flex align-items-end">
+							<input class="form-check-input" type="checkbox" name="terms">
+							<label class="form-check-label ml-2 text-gris--oscuro" for="terms">
+								Política de terminos y condiciones
+							</label>
+						</div>
+						<input type="submit"
+							class="btn btn--service rounded-pill bg-darkgreen position-relative text-white quicksand font-weight-bold px-4 py-0 ml-5 mt-4 ml-0" value="Enviar">
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- END CONTACT  -->
+		<!-- FOOTER  -->
+		<footer >
+			<div class="row  bg-darkgreen align-items-start text-gris quicksand footer">
+				<div class="col-lg-4 col-12   text-center ml-md-4 mt-2 pr-0">
+					<img src="img/logo_white.svg" class="footer__logo d-block  mb-3" alt="hábitat">
+					<p class=" pb-1 border-bottom d-inline mr-5 "><a href="#" class="text-gris">Politica Protección de Datos</a>
+					</p>
+					<p class="mt-2 mr-5 pl-3 d-inline-block"><img src="img/Recurso 39.svg" class="icon_info" alt="icono de correo">
+						<a href="mailto:lineaetica@tuhabitat.co" class="text-gris">lineaetica@tuhabitat.co</a>
+					</p>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-12 col-md-5 pl-4 mr-1 footer__info mt-5 mt-lg-2  text-md-left text-center">
+					<h6>CONTÁCTANOS</h6>
+					<p class="mb-2">
+						<img src="img/Recurso 38.svg" class="icon_info" alt="Icono de telefono">
+						Teléfono:
+						<a href="tel:5743221520" class=" text-gris">(57) (4) 3221520</a>
+					</p>
+					<p class="mb-2">
+						<img src="img/Recurso 38.svg" class="icon_info" alt="Icono de telefono">
+						Celular:
+						<a href="tel:573165200345" class="text-gris">(57) 316 520 0345</a>
+					</p>
+					<p >
+						<img src="img/Recurso 39.svg" class="icon_info" alt="Icono de telefono">
+						<a href="mailto:comercial@tuhabitat.co " class="text-gris">comercial@tuhabitat.co</a>
+					</p>
+					<p>
+						Medellín - Antioquia. Colombia
+					</p>
+				</div>
+				<div class="col-xl-4 col-lg-3 col-md-6 col-12 pl-xl-5 text-md-left text-center	p-0 ml-md-4 mt-lg-0 mt-5 footer__visitanos ">
+					<div class=" icons align-items-center justify-content-between  mb-3  text-darkgreen">
+						<a class="rounded-circle bg-gris icons__circle icons__circle--footer justify-content-center d-flex align-items-center mr-3 "
+							href="#">
+							<img src="img/facebook.svg" alt="icono de facebook">
+						</a>
+						<a class="rounded-circle icons__circle icons__circle--footer bg-gris  justify-content-center d-flex align-items-center mr-3"
+							href="#">
+							<img src="img/instagram.svg" alt="icono de instagram">
+						</a>
+						<a class="rounded-circle icons__circle icons__circle--footer bg-gris justify-content-center d-flex align-items-center  "
+							href="#">
+							<img src="img/youtube.svg" alt="icono de youtube ">
+						</a>
+					</div>
+					<h6>VISÍTANOS</h6>
+					<div class="border p-2 visitanos">
+						<p class="mb-0">De Lunes a Viernes de 9am - 5pm Sábados y domingos de 10am a 4pm</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center  justify-content-center text-white footer__black align-items-center pb-3 pt-2">
+				<p class="d-inline m-0">Potenciado por:</p>
+				<a href="#" class="mx-2">
+					<img src="img/muva.svg" alt="Logo de Muva">
+				</a>
+				|
+				<a href="#" class="mx-2">
+					<img src="img/infofactor.svg" alt="Logo de infofactor">
+				</a>
+			</div>
+		</footer>
+		<!-- ENDFOOTER  -->
+	</div>
+	<div class="loader">
+		<img src="img/logo.svg" alt="logo">
+	</div>
+</body>
+
+</html>

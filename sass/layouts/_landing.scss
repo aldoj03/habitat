@@ -1,0 +1,110 @@
+.landing_left {
+  background: url("../img/head-left.jpg");
+  background-size: cover;
+  width: 473px;
+  @include mediaquery(880px) {
+    & {
+      width: 400px;
+    }
+  }
+  @include mediaquery(770px) {
+    & {
+      width: 100%;
+      padding-top: 50px;
+    }
+  }
+
+  &__title {
+    margin-top: 154px;
+    padding-left: 135px;
+    padding-right: 100px;
+
+    @include mediaquery(1250px) {
+      & {
+        margin-top: 50px;
+      }
+    }
+    @include mediaquery(990px) {
+      & {
+        margin-top: 20px;
+      }
+    }
+    @include mediaquery(480px) {
+      & {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 20px;
+      }
+    }
+
+    h1 {
+      font-size: 109px;
+      letter-spacing: 4.5px;
+      line-height: 100px;
+
+      @include mediaquery(990px) {
+        & {
+          font-size: 80px;
+          line-height: 80px;
+        }
+      }
+      @include mediaquery(880px) {
+        & {
+          font-size: 60px;
+          line-height: 60px;
+        }
+      }
+      @include mediaquery(770px) {
+        & {
+          font-size: 100px;
+          line-height: 90px;
+        }
+      }
+
+      & span:nth-child(2) {
+        letter-spacing: 2.5px;
+        bottom: 7px;
+        font-size: 18pxpx;
+      }
+    }
+  }
+}
+
+.landing__float {
+  width: 943px;
+  padding-left: 75px;
+  padding-right: 65px;
+  bottom: 54px;
+  box-shadow: 0px 4px 11px #00000054;
+
+  &__title {
+    letter-spacing: 1.8px;
+    font-size: 39px;
+    line-height: 49px;
+  }
+
+  @include mediaquery(1050px) {
+    & {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+      bottom: 0px;
+
+      &__title {
+        font-size: 30px;
+      }
+    }
+  }
+  @include mediaquery(650px) {
+    & {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    &__title {
+      letter-spacing: 1.5px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+}

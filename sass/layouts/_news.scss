@@ -1,0 +1,41 @@
+.news {
+  padding: 0px 125px !important;
+  letter-spacing: 2px;
+  &__title {
+    h3 {
+      letter-spacing: 1.5px;
+      &::after {
+        content: "";
+        bottom: -7px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        background: url("../img/Recurso 6.svg") no-repeat;
+        width: 159px;
+        left: 0;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.card--big {
+  border: none !important;
+  height: 325px;
+
+  .card-img-overlay {
+    padding: 150px 87px 70px 80px;
+  }
+  img {
+    filter: brightness(0.6);
+    margin-top: -260px;
+  }
+}
+.card {
+  img {
+    filter: brightness(0.6);
+  }
+  a{
+    font-size: 14px;
+  }
+}

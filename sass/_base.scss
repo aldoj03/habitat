@@ -1,0 +1,5 @@
+/* GENERAL CLASES */
+
+@each $name,$color in $colors{
+	@include classColors($name,$color)
+}

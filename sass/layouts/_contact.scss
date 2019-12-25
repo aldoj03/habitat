@@ -1,0 +1,30 @@
+.contact {
+  background: url("../img/bosque.jpg");
+}
+
+form {
+  padding-right: 80px;
+  input {
+    height: 33px !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  textarea {
+    border-radius: 21px !important;
+  }
+}
+
+.contact__left {
+    margin-left: 60px;
+    & > div {
+        background: #86bb6eec;
+        margin-top: 85px;
+        padding: 80px 90px;
+        letter-spacing: 1px;
+
+        h3{
+            letter-spacing: 3.5px;
+            font-size: 37px;        }
+  }
+}

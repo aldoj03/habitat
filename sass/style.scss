@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+
+
+
+/*LAYOUTS*/
+@import 'layouts/header';
+@import 'layouts/landing';
+@import 'layouts/services';
+@import 'layouts/history';
+@import 'layouts/news';
+@import 'layouts/allies';
+@import 'layouts/contact';
+@import 'layouts/footer';
+
+/*COMPONENTS*/
+@import 'components/icons';
+@import 'components/buttons';
+
+
+

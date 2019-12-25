@@ -1,0 +1,43 @@
+/*HEADER*/
+
+.header__separator {
+  height: 23px;
+}
+
+.header__logo {
+  width: 173px;
+}
+
+header nav {
+  letter-spacing: 0.5px;
+  font-size: 15.8px;
+  padding-top: 0.4rem !important;
+  z-index: 5;
+  
+     @include mediaquery(770px) {
+	  & { 
+		position: fixed !important;
+
+    }
+  } 
+}
+
+.header__nav-container {
+  margin: 0px 106px;
+
+  @include mediaquery(1270px) {
+    & {
+      margin: 0px 30px;
+    }
+  }
+}
+.navbar-toggler {
+  right:  0;
+  &:focus {
+    outline: none;
+  }
+
+  &-icon {
+    background: url("../img/togglebutton.svg") !important;
+  }
+}

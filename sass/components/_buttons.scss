@@ -1,0 +1,22 @@
+.btn {
+    
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    &--landing{
+        margin: 53px 0px 0px 35px;
+        padding-left: 24px;
+        padding-right: 40px;
+
+        @include mediaquery(1100px){
+            margin-top: 10px;
+        }
+        
+    }
+    &--service{
+        margin-top: 34px;
+        font-size: 22px;
+        bottom: 0;
+        z-index: 4;
+        
+    }
+}

@@ -1,0 +1,44 @@
+.footer {
+  letter-spacing: 2px;
+  padding: 33px 15px;
+  p {
+    font-weight: 300;
+  }
+  &__logo {
+    width: 185px;
+    margin-left: 80px;
+
+    & + p {
+      font-size: 13px;
+    }
+  }
+  &__info {
+    p:nth-child(2) img,
+    :nth-child(3) img {
+      width: 11px;
+    }
+  }
+
+  .icon_info {
+    width: 15px;
+    margin-right: 7px;
+  }
+  &__visitanos {
+    .visitanos {
+      font-size: 14px;
+    }
+    padding-right: 64px;
+  }
+  &__black {
+    background: black;
+    p{
+      font-size: 10px;
+    }
+    a:nth-child(2) img{
+      width: 60px;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}

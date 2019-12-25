@@ -1,0 +1,52 @@
+.service {
+  padding-left: 15px;
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    width: 228px;
+
+    span {
+      font-size: 28px;
+      letter-spacing: 2.2px;
+    }
+
+    &::after {
+      content: "";
+      width: 1.5px;
+      height: 82px;
+      top: 9px;
+      position: absolute;
+      right: 0;
+      background: map-get($colors, olive);
+    }
+  }
+
+  &__green-square {
+    height: 513px;
+    z-index: 0;
+    width: 497px;
+  }
+  &__list {
+    letter-spacing: 1.2px;
+  }
+
+  &__content {
+    margin-right: 23px;
+  }
+  &__image {
+    z-index: 2;
+  }
+
+  &__green-lines {
+    z-index: 1;
+    bottom: 40px;
+    width: 700px;
+    border: 3px solid map-get($colors, olive);
+  }
+
+  &-container{
+    background: url('../img/sqn-left.png') no-repeat;
+    background-position: -10px 0px;
+    
+  }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Quicksand:300,400,700&display=swap');
+@font-face {
+    font-family: akzidenzgroteskbq;
+    font-weight: 700;
+    src: url("../fonts/akzidenzgroteskbq-bdcnd.otf") format("opentype");
+}
+@font-face {
+    font-family: akzidenzgroteskbq;
+    font-weight: 500;
+    src: url("../fonts/akzidenzgroteskbq-cnd.otf") format("opentype");
+}
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-BdCnd';
+  src: url('../fonts/AkzidenzGroteskBQ-BdCnd.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-BdCnd.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-BdCnd.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-BdCnd.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-BdCnd.svg#AkzidenzGroteskBQ-BdCnd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-Cnd';
+  src: url('../fonts/AkzidenzGroteskBQ-Cnd.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-Cnd.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-Cnd.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-Cnd.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-Cnd.svg#AkzidenzGroteskBQ-Cnd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.quicksand{
+    font-family: 'Quicksand', ;
+}
+.akzidenzgrotesk{
+    font-family: 'akzidenzgroteskbq';
+
+}

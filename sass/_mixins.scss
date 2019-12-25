@@ -1,0 +1,17 @@
+@mixin classColors($name, $color) {
+    .bg-#{$name} {
+      background: $color !important;
+    }
+  
+    .text-#{$name} {
+      color: $color !important;
+    }
+  }
+
+  @mixin mediaquery($max-value){
+
+    @media screen and (max-width: $max-value) {
+      @content
+    }
+  
+  }
